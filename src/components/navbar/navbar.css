@@ -1,0 +1,76 @@
+.navbar{
+    scroll-behavior: smooth;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+    background-color: var(--mainBack-color);
+    height: 60px;
+    z-index: 100;
+}
+
+.nav_main{
+    align-items: center;
+    top: -8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_main, .nav_mainLink{
+    position: relative;
+    width: 100%;
+
+}
+
+.nav_mainLink{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.nav_main_link_item{
+    font-weight: 500;
+}
+
+.nav_mainLogo{
+    width: 50vw;
+}
+
+.nav_mainImg{
+    width: 220px;
+}
+
+.nav_mainLink{
+    display: flex;
+    justify-content: space-around;
+}    
+    
+
+.nav_mainBtn button{
+    font-size: 14px;
+    background-color: var(--mainColor);
+    border-radius: 5px;
+    width: 150px;
+    height: 32px;
+    letter-spacing: 1px;
+}
+
+
+.nav_login_btn:hover{
+    color: var(--navbarBack-color);
+    cursor: pointer;
+}
+
+.user_fullname{
+    font-size: 18px;
+    width: max-content;
+    margin: auto;
+    padding: 5px 10px;
+    background-color: var(--mainColor);
+    color: var(--mainBack-color);
+    border-radius: 5px;
+}
+
+.buy_items{
+    transform: scale(0);
+}

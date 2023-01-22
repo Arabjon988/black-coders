@@ -1,0 +1,125 @@
+.about_hero{
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    animation: back-animed 10s ease-in-out infinite;
+    background-image: url('../../assets/aboutPages/aboutHeroImg/aboutHeroBg1.png');
+}
+
+@keyframes back-animead{
+    50%{
+        background-image: url('../../assets/aboutPages/aboutHeroImg/aboutHeroBg2.jpg');
+    }
+}
+
+.about_hero{
+    height: 50vw;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    border-bottom: 5px solid var(--mainColor);
+}
+
+.about_hero_main{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 25vw;
+    width: 100%;
+}
+
+.about_hero_info{
+    position: relative;
+    width: 500px;
+    line-height: 40px;
+}
+
+.about_hero_title{
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--white-color);
+}
+
+.detail{
+    width: 110px;
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+    background-color: var(--mainColor);
+}
+
+.about_hero_img{
+    width: 50%;
+    top: -10vw;
+    margin: auto;
+    position: relative;
+}
+
+.about_hero_logo{
+    margin: auto;
+    width: 100%;
+}
+
+.about{
+    width: 100%;
+    height: max-content;
+    position: relative;
+    top: 10px;
+}
+
+.main_info_document{
+    position: relative;
+    width: 100%;
+    height: 1500px;
+}
+
+
+.main_info_document{
+    position: relative;
+}
+
+.main_top_info_title, .main_info_document_title, .our_worker_title{
+    font-size: 45px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.main_top_info_p{
+    width: 95%;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 2px;
+}
+.main_info_document_img{
+    width: 100%;
+}
+
+.our_worker{
+    background-color: var(--white-color);
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+    height: 600px;
+    line-height: 5px;
+}
+
+.our_worker_info:nth-child(even){
+    position: relative;
+    margin-top: 40px;
+}
+
+
+.our_worker_info{
+    font-size: 20px;
+}
+
+
+.about_info, .main_top_info{
+    width: 100%;
+    position: relative;
+}

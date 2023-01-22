@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import Context from './context/Context';
+import AllRoutes from './routes/AllRoutes';
+
 import './App.css';
 
 function App() {
+  const [user, setUser] = useState({
+    fullName: null,
+    password: null,
+  })
+ 
+  const contextValue = {
+    user,
+    setUser
+  };
+
+  if(user.name !== null && user.password !== null){
+    localStorage.setItem('AUTH', true);
+    localStorage.setItem('fullName', user.fullName);
+  }
+  else{
+    localStorage.removeItem('AUTH');
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Context.Provider value= {contextValue} >
+        <AllRoutes />
+      </Context.Provider>
   );
 }
 

@@ -1,0 +1,167 @@
+.contact_hero{
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    animation: back-animez 10s ease-in-out infinite;
+    background-image: url('../../assets/contactPages/contactHeroBg1.png');
+}
+
+@keyframes back-animez{
+    50%{
+        background-image: url('../../assets/contactPages/contactHeroBg2.jpg');
+    }
+}
+
+.contact_hero{
+    height: 50vw;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    border-bottom: 5px solid var(--mainColor);
+
+}
+
+
+.contact_hero_main{
+    position: relative;
+    top: 20vw;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact_hero_info{
+    top: 25px;
+    position: relative;
+    width: 50%;
+    line-height: 10px;
+}
+
+.contact_hero_title{
+    font-size: 4vw;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 4vw;
+    color: var(--white-color);
+}
+
+.detail{
+    width: max-content;
+    border: none;
+    border-radius: 5px;
+    height: 3vw;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+    background-color: var(--mainColor);
+}
+
+.detail:hover{
+    cursor: pointer;
+}
+
+.contact_hero_img{
+    width: 600px;
+    top: -25px;
+    position: relative;
+}
+
+.contact_hero_logo{
+    width: 100%;
+}
+
+.contact_main_links{
+    box-shadow: var(--shadow);
+    position: relative;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.contact_main_links_left{
+    padding: 10px;
+    line-height: 30px;
+}
+
+.contact_main_links_left_item{
+    margin-left: 10px;
+}
+
+.contact_main_links_left_item i:hover{
+    color: var(--mainColor);
+    transition: all ease-in-out 0.2s;
+}
+
+.contact_main_links_left_item .contact_main_links_left_item_icon{
+    font-size: 25px;
+}
+.contact_main_links_left_item .contact_main_links_left_item_icon:hover{
+    transition: all ease-in-out 0.2s;
+    color: var(--mainColor);
+}
+
+.contact_main_links_left_item span{
+    margin-left: 20px;
+}
+.contact_main_links_left_item span:hover{
+    color: var(--mainColor);
+}
+
+.contact_main_links_left_title{
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.contact_main_links_right_map{
+    width: 600px;
+}
+
+.contact_main_links_right_map_img{
+    width: 600px;
+}
+
+.contact_main_top{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.contact_main_top_title{
+    text-align: center;
+    font-size: 2.5vw;
+    color: var(--mainBack-color);
+}
+
+.contact_main_top_p{
+    letter-spacing: 1px;
+    font-size: 1.5vw;
+}
+
+.course_main_items{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course_item{
+    max-width: 250px;
+    width: 400px;
+    height: 450px;
+    border: 1px solid;
+}
+
+.course_item_title{
+    position: relative;
+    color: var(--white-color);
+    font-size: 28px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid;
+    -webkit-text-stroke: var(--mainBack-color) 2px;
+}
+
+.course_item_during_price{
+    display: block;
+}
