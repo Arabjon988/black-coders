@@ -29,7 +29,7 @@ const Login = () => {
           <label for="fulName1">Full Name</label><br />
           <input ref={fullNameRef} type="text" required placeholder='ismingiz' id='fullName'/><br />
           <label for="password1"> Password</label><br />
-          <input ref={passwordRef} type="password" required placeholder='parolingiz' id='password'/><br />
+          <input ref={passwordRef} type="password" min="6"  required placeholder='parolingiz' id='password'/><br />
           <button type='submit' className='loginBtn'>Ro'yxatdan o'tish</button>
         </form>
       </div>
