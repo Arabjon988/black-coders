@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-body {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif, 'Poppins';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 code {
@@ -22,9 +28,9 @@ a{
 
 .container{
   width: 100%;
-  margin: auto;
-  padding: 10px 0px;
   max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
 }
 
 
@@ -36,4 +42,12 @@ a{
   --shadow1: 0 3px 8px rgb(0 0 0 / 24%);
   --course-border: 20px;
   --backImg: linear-gradient(to right, red, yellow) ;
+}
+
+.nomatch{
+  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+  width: 100%;
+  height: 200px;
 }

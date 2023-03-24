@@ -139,29 +139,3 @@
     letter-spacing: 1px;
     font-size: 1.5vw;
 }
-
-.course_main_items{
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.course_item{
-    max-width: 250px;
-    width: 400px;
-    height: 450px;
-    border: 1px solid;
-}
-
-.course_item_title{
-    position: relative;
-    color: var(--white-color);
-    font-size: 28px;
-    letter-spacing: 3px;
-    border-bottom: 1px solid;
-    -webkit-text-stroke: var(--mainBack-color) 2px;
-}
-
-.course_item_during_price{
-    display: block;
-}

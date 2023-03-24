@@ -9,7 +9,7 @@ const CoursesData = [
     {
         id: 2,
         title: "BACK END",
-        parts: [ "PHP",  "Laravel", "Github", "Gitbash", "Sun`iy idrok", "Telegram bot", "MySql" ],
+        parts: [ "PHP",  "Laravel", "Github , Gitbash", "Sun`iy idrok", "Telegram bot", "MySql" ],
         price: 399000,
         month: 6,
     },

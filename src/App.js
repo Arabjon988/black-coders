@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import Context from './context/Context';
+import {useState } from 'react';
 import AllRoutes from './routes/AllRoutes';
+import Context from './context/Context';
 
 import './App.css';
 
@@ -9,10 +9,12 @@ function App() {
     fullName: null,
     password: null,
   })
- 
+
+
+
   const contextValue = {
     user,
-    setUser
+    setUser,
   };
 
   if(user.name !== null && user.password !== null){
@@ -21,8 +23,8 @@ function App() {
   }
   else{
     localStorage.removeItem('AUTH');
-
   }
+
 
   return (
       <Context.Provider value= {contextValue} >

@@ -1,16 +1,16 @@
 .navbar{
-    scroll-behavior: smooth;
-    width: 100vw;
-    top: 0;
+    width: 100%;
     position: fixed;
+    top: 0;
     background-color: var(--mainBack-color);
     height: 60px;
     z-index: 100;
 }
 
 .nav_main{
+    width: 100%;
+    height: 60px;
     align-items: center;
-    top: -8px;
     display: flex;
     justify-content: space-between;
 }
@@ -33,11 +33,11 @@
 }
 
 .nav_mainLogo{
-    width: 50vw;
+    width: 150px;
 }
 
 .nav_mainImg{
-    width: 220px;
+    width: 120px;
 }
 
 .nav_mainLink{
@@ -61,6 +61,10 @@
     cursor: pointer;
 }
 
+.user{
+    display: flex;
+}
+
 .user_fullname{
     font-size: 18px;
     width: max-content;
@@ -72,5 +76,35 @@
 }
 
 .buy_items{
-    transform: scale(0);
+    transform: scale(1);
+    position: relative;
+}
+
+.buy_cart{
+    font-size: 25px;
+    color: var(--white-color);
+}
+
+.menu{
+    background-color: brown;
+    color: var(--white-color);
+    z-index: 10;
+    position: relative;
+    display: none;
+}
+
+@media (max-width: 500px){
+    .nav_mainLink, .nav_mainBtn{display: none;}
+    .menu{
+        transform: scale(1);
+        display: flex;
+        z-index: 1000;
+    }
+    .nav_menu{
+        color: var(--white-color);
+        z-index: 20;
+    }
+    .nav_login_btn{
+        margin-left: -120px;
+    }
 }

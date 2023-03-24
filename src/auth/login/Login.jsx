@@ -26,9 +26,9 @@ const Login = () => {
       <div className="container login_main">
       <form action="" onSubmit={onSubmit} className="login__form">
           <h1 className='login_form_title'>Ro'yxatdan o'tish</h1>
-          <label for="fulName1">Full Name</label><br />
+          <label htmlFor="fulName1">Full Name</label><br />
           <input ref={fullNameRef} type="text" required placeholder='ismingiz' id='fullName'/><br />
-          <label for="password1"> Password</label><br />
+          <label htmlFor="password1"> Password</label><br />
           <input ref={passwordRef} type="password" min="6"  required placeholder='parolingiz' id='password'/><br />
           <button type='submit' className='loginBtn'>Ro'yxatdan o'tish</button>
         </form>

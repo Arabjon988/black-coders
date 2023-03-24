@@ -1,11 +1,8 @@
 import { useContext } from "react";
 import Context from "../../context/Context";
 import { Link, Outlet } from "react-router-dom";
-import logo from '../../assets/heroImg/logo.svg'
-import {FiShoppingCart} from 'react-icons/fi'
-import {FcLike} from 'react-icons/fc'
-
-
+import logo from "../../assets/heroImg/logo.svg";
+import { FiMenu } from "react-icons/fi";
 
 import "./navbar.css";
 
@@ -13,7 +10,7 @@ const Navbar = () => {
   const { user } = useContext(Context);
   return (
     <>
-      <header className="navbar" > 
+      <header className="navbar">
         <div className="container">
           <nav className="nav_main">
             <div className="nav_mainLogo">
@@ -36,21 +33,22 @@ const Navbar = () => {
               </p>
             </div>
             <div className="nav_mainBtn">
-            {
-              user.fullName ? (
-                <p className="user_fullname">{user.fullName}</p> 
+              {user.fullName ? (
+                <>
+                  <div className="user">
+                    <p className="user_fullname">{user.fullName}</p>
+                  </div>
+                </>
               ) : (
                 <Link to="/">
                   <button type="submit" className="nav_login_btn">
                     A'ZO BO'LISH
                   </button>
                 </Link>
-              )
-            }
+              )}
             </div>
-            <div className="buy_items">
-              <FiShoppingCart className="buy_cart" />
-              <FcLike className="liked_cart" />
+            <div className="menu">
+              <FiMenu className="nav_menu" />
             </div>
           </nav>
         </div>
